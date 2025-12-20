@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+.sidebar-overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    z-index: 900;
+  }
+
+  .sidebar {
+    z-index: 1000; /* sobre el overlay */
+  }
+
+  .menu-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1200;
+    background: white;
+    border-radius: 8px;
+    padding: 0.35rem 0.6rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  }
+}
+
